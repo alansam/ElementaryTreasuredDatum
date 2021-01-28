@@ -59,3 +59,68 @@ int main() {
 
   return 0;
 }
+
+/*
+template <typename T>
+T concatenate(T first, T second)
+{
+  return T();
+}
+class TrainRoute
+{
+private:
+  string departure;
+  string destination;
+  char * trainCode;
+public:
+  TrainRoute()
+  {
+    departure = "";
+    destination = "";
+    trainCode = nullptr;
+  }
+
+  TrainRoute(string departure, string destination, const char * trainCode)
+  {
+    this->departure = departure;
+    this->destination = destination;
+    this->trainCode = new char[strlen(trainCode) + 1];
+    strcpy_s(this->trainCode, strlen(trainCode)+1, trainCode);
+  }
+..........
+};
+
+class FreightTrainRoute : public TrainRoute
+{
+protected:
+  int nbOfWagons;
+  float * weigthPerWagon;
+..............
+public:
+  FreightTrainRoute() : TrainRoute("", "", "Unknown")
+  {
+    this->weigthPerWagon = nullptr;
+    this->nbOfWagons = 0;
+  }
+
+  FreightTrainRoute(string departure, string destination, const char* trainCode) 
+  : TrainRoute(departure, destination, trainCode)
+  {
+    this->weigthPerWagon = nullptr;
+    this->nbOfWagons = 0;
+    this->weigthPerWagon = weigthPerWagon;
+    this->nbOfWagons = nbOfWagons;
+  }
+..............
+};
+
+vector<float> ArrayToVector(FreightTrainRoute & v)
+{
+  return vector<float>();
+};
+
+map<char *, FreightTrainRoute> ObjectsToMap(FreightTrainRoute * trains, int nbOfTrains)
+{
+  return map<char *, FreightTrainRoute>();
+};
+*/
